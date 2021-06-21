@@ -20,9 +20,9 @@
  }
   
  body {
-    margin: 0;
-    justify-content: center;
-    align-items: center;
+    margin: 0;/*區域的外邊界距離*/
+    justify-content: center; /* 居中排列 */
+    align-items: center;/* Pack items around the center */
     background: black;
  }
 
@@ -31,31 +31,30 @@
  }
 
  div ul {
-    list-style-type: none;
     margin: 0;
-    padding: 0;
-    overflow: hidden;
+    padding: 0;/*可以控制區域如 DIV 或 span 的內部距離*/
+    overflow: hidden;/*自動隱藏超出的文字或圖片*/
  }
 
  div li {
-    font-size: 26px;
-    float: left;
-    font-weight: 500;
+    font-size: 26px;/*設定文字大小*/
+    float: left;/*div浮動起來，不再形成 div 占滿整行的情況*/
+    font-weight: 500;/*設定字體粗細*/
  }
  div li a {
-    display: inline-block;
+    display: inline-block;/*元素的顯示型態被設定為區塊元素 內行元素*/
     color: #FFF;
-    text-align: center;
+    text-align: center; /*置中*/
     padding: 12px 24px;
-    font-family: 'Big Shoulders Display';
-    transition: all 0.3s ease-in-out;
-    outline: 1px transparent solid;
-    outline-offset: -4px;
+    font-family: 'Big Shoulders Display'; /*字型*/
+    transition: all 0.3s ease-in-out; /*轉場*/
+    outline: 1px transparent solid;/*外觀*/
+    outline-offset: -4px; /*將預設的輪廓視覺效果會與分開*/分開*/
  }
 
  div li a:hover {
     background: rgba(143, 188, 143, 0.6);
-    outline-color: rgb(255, 255, 255, 0.6);
+    outline-color: rgb(255, 255, 255, 0.6);/*外觀顏色*/
  }
 
  table {
@@ -66,11 +65,11 @@
  }
 
  table img {
-    max-width: 180px;
+    max-width: 180px;/*表示是最大寬度*/
  }
 
  thead td, td[colspan="4"] {
-    font-family: 'Quicksand', cursive;
+    font-family: 'Quicksand';
     font-weight: 200;
     font-size: 24px;
     padding: 12px 6px;
@@ -87,13 +86,13 @@
  }
 
  td {
-    border-left: 1px rgba(255, 255, 255, 1) solid;
+    border-left: 1px rgba(255, 255, 255, 1) solid;/*設置左邊框的樣式*/
  }
  
  tbody td, p {
     font-family: 'Quicksand',Noto Sans TC;
     font-size: 18px;
-    line-height: 30px;
+    line-height: 30px;/*行高*/
  }
 
  table td:first-child {
@@ -106,7 +105,6 @@
  .something div {
     padding: 0px 15%;
     text-align: left;
-    letter-spacing: 1px;
  }
 
  .content li {
@@ -116,7 +114,6 @@
  .content li:not(.special):before {
     margin: 0px 6px;
     background: linear-gradient(60deg, rgba(204,204,77,0) 10%, rgba(105,119,35,12) 60%, rgba(154,205,50,25) 100%);
-    -webkit-background-clip:text;
     color: white;
  }
 
@@ -133,11 +130,10 @@
  .special a {
      font-weight: 400;
      transition: all 0.2s ease-in-out;
-     text-decoration: none;
  }
 
  .special a:hover {
-     filter: drop-shadow(0px 0px 2px #FFF);
+     filter: drop-shadow(0px 0px 2px #FFF);/*濾鏡效果*/
  }
 
  p {
